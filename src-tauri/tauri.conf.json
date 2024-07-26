@@ -1,0 +1,94 @@
+{
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "beforeBuildCommand": "npm run build",
+    "devPath": "http://localhost:1420",
+    "distDir": "../dist"
+  },
+  "package": {
+    "productName": "jukbx",
+    "version": "0.0.1"
+  },
+  "tauri": {
+    "allowlist": {
+      "all": false,
+      "window": {
+        "all": false,
+        "close": true,
+        "create": true,
+        "hide": true,
+        "maximize": true,
+        "minimize": true,
+        "setAlwaysOnTop": true,
+        "setFullscreen": true,
+        "setTitle": true,
+        "show": true,
+        "startDragging": true,
+        "unmaximize": true,
+        "unminimize": true
+      },
+      "protocol": {
+        "all": false,
+        "asset": true,
+        "assetScope": [
+          "$APPCACHE/imgcache/*"
+        ]
+      },
+      "dialog": {
+        "all": false,
+        "ask": false,
+        "confirm": false,
+        "message": false,
+        "open": true,
+        "save": true
+      },
+      "notification": {
+        "all": true
+      }
+    },
+    "bundle": {
+      "active": true,
+      "targets": "all",
+      "identifier": "com.typical.jukbx",
+      "publisher": "TypicalAuthor",
+      "copyright": "",
+      "category": "Music",
+      "shortDescription": "Jukbx",
+      "longDescription": "Music player and library manager",
+      "icon": [
+        "icons/32x32.png",
+        "icons/128x128.png",
+        "icons/128x128@2x.png",
+        "icons/icon.icns",
+        "icons/icon.ico"
+      ]
+    },
+    "security": {
+      "csp": "default-src 'self'; img-src 'self' asset: data: https://asset.localhost; media-src 'self' asset: https://asset.localhost"
+    },
+    "windows": [
+      {
+        "fullscreen": false,
+        "resizable": true,
+        "title": "jukbx",
+        "width": 1050,
+        "height": 835,
+        "decorations": false,
+        "visible": false,
+        "minHeight": 835,
+        "minWidth": 1050
+      },
+      {
+        "label": "JUKBX-splashscreen",
+        "decorations": false,
+        "skipTaskbar": true,
+        "alwaysOnTop": true,
+        "url": "splashscreen.html",
+        "center": true,
+        "width": 300,
+        "height": 150,
+        "resizable": false
+      }
+    ]
+  }
+}

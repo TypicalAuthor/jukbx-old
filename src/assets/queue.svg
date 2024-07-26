@@ -1,0 +1,11 @@
+<svg width="220" height="220" viewBox="0 0 220 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="22" y="64" width="176" height="15" fill="white"/>
+<path d="M22 90H198V97.5H131V105H22V90Z" fill="white"/>
+<rect x="22" y="116" width="109" height="15" fill="white"/>
+<rect x="22" y="142" width="109" height="15" fill="white"/>
+<circle cx="134" cy="179" r="16" fill="white"/>
+<circle cx="187.5" cy="158.5" r="15.5" fill="white"/>
+<rect x="135" y="108" width="15" height="74" fill="white"/>
+<rect x="188" y="100" width="15" height="57" fill="white"/>
+<rect x="135" y="115" width="15" height="53" transform="rotate(-90 135 115)" fill="white"/>
+</svg>
